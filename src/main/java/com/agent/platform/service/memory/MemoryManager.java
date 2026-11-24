@@ -41,7 +41,7 @@ public class MemoryManager {
      * 保存用户消息
      */
     public void saveUserMessage(String conversationId, String content) {
-        shortTermMemory.addMessage(conversationId, "user", content);
+//        shortTermMemory.addMessage(conversationId, "user", content);
         log.debug("保存用户消息到短期记忆: conversationId={}", conversationId);
     }
 

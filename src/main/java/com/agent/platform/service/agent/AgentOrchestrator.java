@@ -58,7 +58,7 @@ public class AgentOrchestrator {
 
         try {
             String conversationId = resolveConversationId(request.getConversationId());
-
+            log.info("进入流程");
             memoryManager.saveUserMessage(conversationId, request.getMessage());
 
             traceService.addSpan(traceId, "intent_recognition", Map.of("message", request.getMessage()));
